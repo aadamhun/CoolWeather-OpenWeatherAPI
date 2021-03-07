@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  margin: 0;
+}
+html, body{
+  width: 100%; height: 100%;
+  font-family: "Arial"; font-size: 12px;
+}
+body{
+  background-color: #e7e7e7;
+}
+header{
+  width: 100%; height: 0%;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex; flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  text-align: center;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+input{
+  background-color: #fff; background-image: url("pin.jpg"); background-size: 4%;
+  background-position: center left 10px;
+  background-repeat: no-repeat;
+  border-radius: 15px; border: none;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+  display: block;
+  width: 50%;
+  max-width: 800px; margin: 0.5px auto;
+  padding: 20px; padding-left: 50px;
+  font-size: 1.7rem; font-family: "Arial"; font-weight: 300px;
+  box-sizing: border-box;
+}
+.forecast{
+  width: 100%; height: 100%;
+  display: flex; flex-wrap: wrap;
+  margin: 60px auto;
+}
+.forecast .forecast--item{
+  background-color: #fff;
+  flex: 1; display: flex;flex-direction: column; 
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+  padding: 20px;
+  box-sizing: border-box; text-align: center; align-items: center;
+  justify-content: space-between;
+  transition: 0.1s all ease-in;
+  cursor: pointer;
+}
+.forecast--item:hover{
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19) 0 15px 15px rgba(0, 0, 0, 0.25);
+}
+h3{
+  font-weight: 350;
+  text-align: center;
+}
+h4{
+  font-weight: 250;
+  text-align: center;
+}
+.weather{
+  font-size: 3rem;
+}
+.temperature{
+  font-size: 3rem;
+}
+.wind{
+  font-size: 5rem;
+}
+
+div#coverpage.visible{
+  height: 100%;
+  opacity: 1;
+}
+div#details{
+  left: 0;
+  top: 0;
+  width: 100%; height: 80%;
+  z-index: 50;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+  padding: 25px;
+  box-sizing: border-box;
+  left: 1%; top:1%;
+  overflow: none;
+}
+#details--flexbox{
+  width: 100%;
+  height: calc(90% - 40px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px, auto;
+}
+#details h3{
+  font-size: 3rem;
+}
+a.closeBtn{
+  display: block;
+  position: fixed;
+  top: 40px; right: 40px;
+  text-decoration: none;
+  font-size: 3rem;
+  width: 40px; height: 40px; 
+  background-color:brown; color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  transition: 0.1s all ease-in;
+}
+a.CloseBtn:hover{
+  background-color:brown;
+}
+#details h4.temperature{
+  font-size: 3.5rem;
+}
